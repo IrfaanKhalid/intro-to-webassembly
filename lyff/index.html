@@ -10,6 +10,7 @@
       const memory = null;
       let exports = null;
 
+      // Function to initialize our board with the WebAssembly API
       async function init() {
         // TODO 3 - Next, we'll define our environment
         const env = null;
@@ -21,18 +22,22 @@
          */
         const wa = null;
 
+        /*
+         * To handle the next TODO statements, let's first review our helper methods
+         */
+
         // TODO 5 - Almost done - let's draw our LYFF board!
 
         // TODO 6 - Finally, we'll define the behavior of a click handler
         canvas.onclick = (ev) => {};
       }
 
-      // Function which allows us to access our board via a pointer
+      // Allows us to access our board via a pointer
       function getBoardBuffer() {
         return new Uint8Array(memory.buffer, exports._board_ref());
       }
 
-      // Function which draws our board
+      // Draws our board
       function draw() {
         const buffer = getBoardBuffer();
 
